@@ -1,23 +1,5 @@
-# MyWays.ai Assignment: Platform Engineer Intern Assignment
+# ParseNimbus: Cloud-based Document Processing System
 
-## Table of Contents
-1. [Part 1: Infrastructure Deployment Using Terraform](#part-1-infrastructure-deployment-using-terraform)
-    - [Services Used](#services-used-in-the-assignment-with-their-roles)
-    - [Command Execution](#command-execution)
-    - [Execution Flow](#execution-flow)
-    - [Results](#results)
-2. [Part 2: Application Deployment on Kubernetes Using Helm](#part-2-application-deployment-on-kubernetes-using-helm)
-    - [Set Up Kubernetes Environment (Minikube)](#set-up-kubernetes-environment-minikube)
-    - [Containerizing the Apache Server using Helm](#containerizing-the-apache-server-using-helm)
-    - [Prometheus Setup](#setting-up-the-monitoring-with-prometheus)
-    - [Grafana Setup](#setting-up-visualization-using-grafana)
-    - [Add Promrtheus as a Data Source](#add-prometheus-as-a-data-source)
-    - [Prometheus Dashboard](#dashboard-of-prometheus-after-successfull-execution)
-    - [Grafana Dashboard](#dashboard-of-grafana-after-successfull-execution)
-
----
-# Part 1: Infrastructure Deployment Using Terraform
-## Application: Cloud-based document processing.
 
 
 I made  a cloud-based processing and review of documents application involving the use of multiple AWS services, along with Python automation. The system processes the uploaded document, be it an invoice, contract, or anything else, and saves the department-specific processed data in the cloud. For setting up the cloud infrastructure I have used a terraform script Here I took the Finance department which only deals with the amount to be paid, vendor’s account number and his name; every other information is secondary to it, the main focus lies on these 3 things.
