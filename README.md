@@ -61,14 +61,11 @@ This organization simplifies the review process and improves productivity by ens
 
 <strong>Terraform</strong> automates AWS infrastructure deployment and manages resources such as S3 buckets, SQS queues, EC2 instances, and Secrets Manager. Provides state management to ensure consistent deployments.
 
-<strong>Amazon S3</strong> stores uploaded documents (e.g., invoices) in designated folders.
-Raw and processed data are organized under department-specific folders.
+<strong>AWS EC2</strong> hosts the Python automation script `document_processing.py`, which coordinates the entire document processing workflow. Python virtual environments are used to install necessary dependencies (e.g., boto3).
 
 <strong>Amazon SQS</strong> decouples the processing workflow by queuing messages with document details (bucket name, file key). Ensures asynchronous document processing.
 
 <strong>AWS Textract</strong> extracts text and structured data from documents. Transforms extracted information into department-specific outputs.
-
-<strong>AWS EC2</strong> hosts the Python automation script document_processing.py, which coordinates the entire document processing workflow. Python virtual environments are used to install necessary dependencies (e.g., boto3).
 
 
 ## Command Execution
