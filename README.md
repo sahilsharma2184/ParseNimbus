@@ -6,15 +6,14 @@ For example, when handling documents for the Finance department, the system focu
 
 The infrastructure for ParseNimbus is set up using Terraform scripts, allowing for a seamless, automated, and scalable cloud environment. By using services like Amazon S3 for secure storage, EC2 for compute resources, Textract for data extraction, and SQS for asynchronous communication, ParseNimbus ensures an efficient and organized approach to document management. The combination of these services, along with Python automation, enables the application to be adaptable to different document types and departmental needs, providing an effective solution for businesses that require rapid and accurate document processing.
 
-## Services used in the assignment with their roles.
+## Key Features of ParseNimbus
 
 
-<strong>Terraform (for Infrastructure-as-Code):</strong> 
+<strong>End-to-End Automation of Document Processing</strong> 
 
-This includes automating the deployment and management of AWS infrastructure, including S3 buckets, SQS queues, and EC2 instances, among other necessary resources.
+ParseNimbus automates the entire document workflow, from uploading to processing, extracting key data, and saving the results. For example, the Finance department focuses on essential information like the vendor's name, account number, and payment details, while the system handles everything else automatically.
 
-How it's used:Terraform will provide the cloud infrastructure, and everything from S3 to SQS, EC2, right down to Secrets Manager will be correctly implemented and will, consequently, maintain state management.
-
+This boosts operational efficiency by eliminating manual steps and reducing human error. It also allows employees to focus on critical tasks while the system processes documents in the background.
 
 <strong>Amazon S3: Simple Storage Service</strong>
 
