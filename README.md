@@ -54,7 +54,7 @@ After the whole infrastructure of aws is set-up using the `main.tf` script, here
 
 ### ssh into the aws ec2 instance
 
-`ssh -i myways_ec2_keypair.pem ubuntu@<public_ip_of_ubuntu_instance>`
+`ssh -i parsenimbus_ec2_keypair.pem ubuntu@<public_ip_of_ubuntu_instance>`
 
 ### Install python3 and Pip
 
@@ -102,11 +102,11 @@ After the whole infrastructure of aws is set-up using the `main.tf` script, here
 
 ### Upload the pdf file to the s3 bucket
 
-`aws s3 cp SampleInvoice.pdf s3://myways-s3-bucket-2184/`
+`aws s3 cp SampleInvoice.pdf s3://parsenimbus-s3-bucket-2184/`
 
 ### Send message to the SQS Queue
 
-`aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/3240XXXXX890/document-processing-queue_2184 \ --message-body "{\"bucket_name\":\"myways-s3-bucket-2184\", \"file_key\":\"SampleInvoice.pdf\"}" --region us-east-1`
+`aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/3240XXXXX890/document-processing-queue_2184 \ --message-body "{\"bucket_name\":\"parsenimbus-s3-bucket-2184\", \"file_key\":\"SampleInvoice.pdf\"}" --region us-east-1`
 
 ### Run the Document Processing Script
 
@@ -114,11 +114,11 @@ After the whole infrastructure of aws is set-up using the `main.tf` script, here
 
 ### Verify the processed data in the s3 bucket
 
-`aws s3 ls s3://myways-s3-bucket-2184/processed/finance/`
+`aws s3 ls s3://parsenimbus-s3-bucket-2184/processed/finance/`
 
 ### Download the Processed Data
 
-`aws s3 cp s3://myways-s3-bucket-2184/processed/finance/finance_data.json`
+`aws s3 cp s3://parsenimbus-s3-bucket-2184/processed/finance/finance_data.json`
 
 ### View the Processed Data
 
@@ -126,7 +126,7 @@ After the whole infrastructure of aws is set-up using the `main.tf` script, here
 ## Execution Flow
 
 * #### Document Upload
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document Upload: A document (e.g., `SampleInvoice.pdf`) is uploaded to the S3 bucket (`myways-s3-bucket-2184`).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document Upload: A document (e.g., `SampleInvoice.pdf`) is uploaded to the S3 bucket (`parsenimbus-s3-bucket-2184`).
 
 * #### SQS Message sent
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A message is being sent to the SQS queue document-processing-queue_2184 with a bucket and file key of the uploaded document.
