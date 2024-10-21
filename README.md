@@ -9,7 +9,7 @@ The infrastructure for ParseNimbus is set up using Terraform scripts, allowing f
 ## Key Features of ParseNimbus
 
 
-<strong>End-to-End Automation of Document Processing</strong> 
+### <strong>End-to-End Automation of Document Processing</strong> 
 
 ParseNimbus automates the entire document workflow, from uploading to processing, extracting key data, and saving the results. For example, the Finance department focuses on essential information like the vendor's name, account number, and payment details, while the system handles everything else automatically.
 
