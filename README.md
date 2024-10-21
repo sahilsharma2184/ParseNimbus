@@ -66,6 +66,7 @@ This organization simplifies the review process and improves productivity by ens
 <strong>Amazon SQS</strong> decouples the processing workflow by queuing messages with document details (bucket name, file key). Ensures asynchronous document processing.
 
 <strong>Amazon S3</strong> stores uploaded documents (e.g., invoices) in designated folders. Raw and processed data are organized under department-specific folders, like `processed/finance/`
+
 <strong>AWS Textract</strong> extracts text and structured data from documents. Transforms extracted information into department-specific outputs.
 
 
