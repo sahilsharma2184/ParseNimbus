@@ -1,10 +1,10 @@
 # ParseNimbus: Cloud-based Document Processing System
 
+ParseNimbus is a cloud-based document processing solution that not only manages various document types like invoices and contracts but also automates their review and categorization based on departmental needs. The primary purpose of the project is to streamline the document handling process by leveraging AWS services and Python automation. Once a document is uploaded, the system processes it and extracts key information relevant to the respective department. 
 
+For example, when handling documents for the Finance department, the system focuses on extracting crucial data such as the amount to be paid, the vendor’s account number, and the vendor’s name. All other details are secondary. This precise focus ensures that the relevant information is quickly identified and saved in the cloud, enhancing the efficiency of the document review process.
 
-I made  a cloud-based processing and review of documents application involving the use of multiple AWS services, along with Python automation. The system processes the uploaded document, be it an invoice, contract, or anything else, and saves the department-specific processed data in the cloud. For setting up the cloud infrastructure I have used a terraform script Here I took the Finance department which only deals with the amount to be paid, vendor’s account number and his name; every other information is secondary to it, the main focus lies on these 3 things.
-With that, here is a breakdown of all the services used and their roles.
-
+The infrastructure for ParseNimbus is set up using Terraform scripts, allowing for a seamless, automated, and scalable cloud environment. By using services like Amazon S3 for secure storage, EC2 for compute resources, Textract for data extraction, and SQS for asynchronous communication, ParseNimbus ensures an efficient and organized approach to document management. The combination of these services, along with Python automation, enables the application to be adaptable to different document types and departmental needs, providing an effective solution for businesses that require rapid and accurate document processing.
 
 ## Services used in the assignment with their roles.
 
