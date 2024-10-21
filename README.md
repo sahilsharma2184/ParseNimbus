@@ -53,8 +53,8 @@ This organization simplifies the review process and improves productivity by ens
 ![Python](Images/Python.png)
 ![Terraform](Images/Terraform.png)
 ![EC2](Images/ec2.png)
-![SQS](Images/sqs.png)
-![S3](Images/s3.png)
+![SQS](Images/Screenshot%202024-10-21%20194858.png)
+![S3](Images/s31.png)
 ![Textract](Images/textract1.png)
 
 ## Command Execution
