@@ -57,6 +57,20 @@ This organization simplifies the review process and improves productivity by ens
 ![S3](Images/s31.png)&nbsp;&nbsp;&nbsp;
 ![Textract](Images/textract.png)
 
+<strong>Python</strong> automates the workflow by running the script `document_processing.py`, which retrieves documents from S3, processes them using AWS Textract, and stores the extracted data back into S3. It also manages the interaction between AWS services like SQS, Secrets Manager, and Textract.
+
+<strong>Terraform</strong> automates AWS infrastructure deployment and manages resources such as S3 buckets, SQS queues, EC2 instances, and Secrets Manager. Provides state management to ensure consistent deployments.
+
+<strong>Amazon S3</strong> stores uploaded documents (e.g., invoices) in designated folders.
+Raw and processed data are organized under department-specific folders.
+
+<strong>Amazon SQS</strong> decouples the processing workflow by queuing messages with document details (bucket name, file key). Ensures asynchronous document processing.
+
+<strong>AWS Textract</strong> extracts text and structured data from documents. Transforms extracted information into department-specific outputs.
+
+<strong>AWS EC2</strong> hosts the Python automation script document_processing.py, which coordinates the entire document processing workflow. Python virtual environments are used to install necessary dependencies (e.g., boto3).
+
+
 ## Command Execution
 
 After the whole infrastructure of aws is set-up using the `main.tf` script, here are the commands that I have executed one-by-one for managing and using the services.
