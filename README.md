@@ -55,7 +55,7 @@ This organization simplifies the review process and improves productivity by ens
 ![EC2](Images/ec2.png)
 ![SQS](Images/sqs.png)
 ![S3](Images/s3.png)
-![Textract](Images/textract.png)
+![Textract](Images/textract1.png)
 
 ## Command Execution
 
