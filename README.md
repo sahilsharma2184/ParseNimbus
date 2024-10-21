@@ -144,26 +144,4 @@ The extracted data is converted into department-specific outputs, such as the fi
 
 ## Results
 
-* #### SSH into the ec2 instance locally
-![ssh](Images/ssh.png)
-
-* #### Activating the python virtual environment.
-![python virtual environment](Images/Activating%20the%20python%20virtual%20environment.png)
-
-* #### Uploading the file to the s3 bucket.
-![Upload to s3 bucket](Images/Upload%20the%20file%20to%20s3%20bucket.png)
-
-* #### Sending message to SQS Queue.
-![sqs queue](Images/sqs%20message.png)
-
-* #### Run the Document Processing Script.
-![Run the Document Processing Script](Images/Run%20the%20Document%20Processing%20Script.png)
-
-* #### Verifying the Processed Data in S3.
-![Verify the Processed Data in S3](Images/Verify%20the%20Processed%20Data%20in%20S3.png)
-
-* #### Downloading the Processed Data for Review.
-![Downloading the Processed Data for Review](Images/Download%20the%20Processed%20Data%20for%20Review.png)
-
-* ####  Viewing the Processed Data.
-![ View the Processed Data](Images/View%20the%20processed%20data.png)
+The input to the system is a document, typically an invoice, in PDF format. For this demonstration, the input file is named `SampleInvoice.pdf`. This document contains standard invoice information such as the vendor's name, account number, total amount to be paid, product, quantity and amount per unit.
