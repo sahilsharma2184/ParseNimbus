@@ -48,6 +48,10 @@ Processed documents are organized in department-specific folders for easy retrie
 
 This organization simplifies the review process and improves productivity by ensuring that processed data is readily accessible.
 
+## Project Tech-Stack
+
+
+
 ## Command Execution
 
 After the whole infrastructure of aws is set-up using the `main.tf` script, here are the commands that I have executed one-by-one for managing and using the services.
@@ -146,5 +150,6 @@ The extracted data is converted into department-specific outputs, such as the fi
 
 The input to the system is a document, typically an invoice, in PDF format. For this demonstration, the input file is named `SampleInvoice.pdf` which is also attached in this repository. This document contains standard invoice information such as the vendor's name, account number, total amount to be paid, product, quantity and amount per unit.
 
-Once the document is uploaded to the S3 bucket, it is queued for processing via Amazon SQS and passed to AWS Textract for automated text extraction. The application returns a structured JSON file containing the extracted, department-specific data. For this case (finance department), the relevant output includes `Vendor Name`, `Account Number`, `Total Amount` 
+Once the document is uploaded to the S3 bucket, it is queued for processing via Amazon SQS and passed to AWS Textract for automated text extraction. The application returns a structured JSON file containing the extracted, department-specific data. For this case (finance department), the relevant output includes `Vendor Name`, `Account Number` and `Total Amount` 
 
+![Result](Images/View%20the%20processed%20data.png)
