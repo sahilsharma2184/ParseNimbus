@@ -50,11 +50,11 @@ This organization simplifies the review process and improves productivity by ens
 
 ## Project Tech-Stack
 
-![Python](Images/Python.png)&nbsp;&nbsp;&nbsp;&nbsp;
-![Terraform](Images/Terraform.png)&nbsp;&nbsp;&nbsp;&nbsp;
-![EC2](Images/ec2.png)&nbsp;&nbsp;&nbsp;&nbsp;
-![SQS](Images/sqs.png)&nbsp;&nbsp;&nbsp;&nbsp;
-![S3](Images/s3.png)&nbsp;&nbsp;&nbsp;&nbsp;
+![Python](Images/Python.png)&nbsp;
+![Terraform](Images/Terraform.png)&nbsp;
+![EC2](Images/ec2.png)&nbsp;
+![SQS](Images/sqs.png)&nbsp;
+![S3](Images/s3.png)&nbsp;
 ![Textract](Images/textract.png)
 
 ## Command Execution
